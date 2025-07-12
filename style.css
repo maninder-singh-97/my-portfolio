@@ -23,7 +23,7 @@ main {
   animation: fadeInUp 0.7s ease both;
 }
 
-/* === Navbar === */
+/* === Navbar Styles === */
 .navbar {
   background: #111;
   color: #00ffff;
@@ -46,11 +46,35 @@ main {
 }
 .nav-links li a {
   color: #00ffff;
-  transition: 0.3s ease;
+  position: relative;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
-.nav-links li a:hover {
+
+/* Hover and Active Effects */
+.nav-links li a:hover,
+.nav-links li a.active {
   color: #ffffff;
+  text-shadow: 0 0 8px #00ffff;
 }
+
+/* Underline Effect */
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #00ffff;
+  transition: width 0.3s ease;
+  opacity: 0.7;
+}
+.nav-links li a:hover::after,
+.nav-links li a.active::after {
+  width: 100%;
+}
+
 
 /* === Hero Section === */
 .hero {
