@@ -2,75 +2,119 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Maninder Singh | Portfolio</title>
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maninder Singh | Data Analyst</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <header>
-    <nav class="navbar">
-      <div class="logo">Maninder.dev</div>
+  <header class="navbar">
+    <div class="logo">Maninder Singh</div>
+    <nav>
       <ul class="nav-links">
-        <li><a href="#hero" class="active">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about" class="active">About</a></li>
+        <li><a href="#work">Work Experience</a></li>
+        <li><a href="#education">Education</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section id="hero" class="hero">
-      <div class="hero-text">
-        <h1>Hello, I'm <span>Maninder Singh</span></h1>
-        <p>A Frontend Developer</p>
-        <a href="Resume.pdf" download class="resume-btn">Download Resume</a>
+
+    <section id="about" class="intro">
+      <h1>Senior Data Analyst</h1>
+      <p>
+        4+ years of experience building dashboards, automating reports, and analyzing performance data to support business decisions. Skilled in Power BI, SQL, PySpark, and JavaScript, with a strong record of uncovering cost-saving opportunities and enabling data-driven decisions.
+      </p>
+      <a href="Resume.pdf" class="download-btn" download>Download Resume</a>
+    </section>
+
+    <section id="work" class="timeline-section">
+      <h2>Work Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-date">Jun 2025 – Present</div>
+          <div class="timeline-content">
+            <h3>Senior Analyst, United Airlines</h3>
+            <ul>
+              <li>Created JavaScript tools to visualize cross-team scheduling inconsistencies.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">Jan 2024 – Jun 2025</div>
+          <div class="timeline-content">
+            <h3>Analyst-II, United Airlines</h3>
+            <ul>
+              <li>Built a collaborative JavaScript dashboard used by 800+ employees.</li>
+              <li>Developed Power BI dashboards identifying $100K+ time savings annually.</li>
+              <li>Mentored team in dashboard automation.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">Jan 2023 – Jan 2024</div>
+          <div class="timeline-content">
+            <h3>Analyst-I, United Airlines</h3>
+            <ul>
+              <li>Analyzed flight timing patterns to improve operations.</li>
+              <li>Migrated SQL workflows to PySpark to enhance scalability.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">Jul 2021 – Jan 2023</div>
+          <div class="timeline-content">
+            <h3>Technical Data Analyst, Knowde</h3>
+            <ul>
+              <li>Automated extraction from chemical product data sheets.</li>
+              <li>Led 3-member team to reduce customer escalations.</li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <section id="about" class="about">
-      <h2>About Me</h2>
-      <p>
-        Senior Data Analyst with 4+ years of experience in building dashboards, automating reports, and analyzing performance data to support business decisions.
-        Skilled in Power BI, SQL, PySpark, and JavaScript, with a track record of improving efficiency, uncovering cost-saving opportunities, and supporting cross-functional teams.
-      </p>
-    </section>
+    <section id="education" class="timeline-section">
+      <h2>Education</h2>
+      <div class="timeline">
 
-    <section id="projects" class="projects">
-      <h2>Projects</h2>
-      <div class="project-list">
-        <div class="project-card">
-          <h3>Project 1</h3>
-          <p>Brief about the project.</p>
+        <div class="timeline-item">
+          <div class="timeline-date">2019 – 2021</div>
+          <div class="timeline-content">
+            <h3>M.Tech, IIT Guwahati</h3>
+          </div>
         </div>
-        <div class="project-card">
-          <h3>Project 2</h3>
-          <p>Brief about the project.</p>
+
+        <div class="timeline-item">
+          <div class="timeline-date">2015 – 2019</div>
+          <div class="timeline-content">
+            <h3>B.Tech, GGSIPU Delhi</h3>
+          </div>
         </div>
+
       </div>
     </section>
 
     <section id="contact" class="contact">
-      <h2>Contact Me</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+      <h2>Contact</h2>
+      <p><strong>Email:</strong> <a href="mailto:manindersingh.camp@gmail.com">manindersingh.camp@gmail.com</a></p>
+      <p><strong>Phone:</strong> +91 9717491256</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/YOUR_ID_HERE" target="_blank">linkedin.com/in/YOUR_ID_HERE</a></p>
     </section>
+
   </main>
 
   <footer>
     <p>&copy; 2025 Maninder Singh. All Rights Reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
