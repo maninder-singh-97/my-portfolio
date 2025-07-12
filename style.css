@@ -23,6 +23,22 @@ main {
   animation: fadeInUp 0.7s ease both;
 }
 
+/* === General Glow on Hover for Text Elements === */
+h1:hover,
+h2:hover,
+h3:hover,
+p:hover,
+span:hover,
+.contact input:hover,
+.contact textarea:hover {
+  text-shadow: 0 0 8px #00ffff;
+}
+.resume-btn:hover {
+  background: #00cccc;
+  box-shadow: 0 0 8px #00ffff;
+}
+
+
 /* === Navbar Styles === */
 .navbar {
   background: #111;
@@ -51,14 +67,12 @@ main {
   transition: all 0.3s ease;
 }
 
-/* Hover and Active Effects */
+/* Hover and Active Effects for Navbar */
 .nav-links li a:hover,
 .nav-links li a.active {
   color: #ffffff;
   text-shadow: 0 0 8px #00ffff;
 }
-
-/* Underline Effect */
 .nav-links li a::after {
   content: "";
   position: absolute;
@@ -74,7 +88,6 @@ main {
 .nav-links li a.active::after {
   width: 100%;
 }
-
 
 /* === Hero Section === */
 .hero {
@@ -106,9 +119,7 @@ main {
   border-radius: 6px;
   font-weight: 600;
   transition: 0.3s ease;
-}
-.resume-btn:hover {
-  background: #00cccc;
+  text-decoration: none;
 }
 
 /* === Section Titles === */
